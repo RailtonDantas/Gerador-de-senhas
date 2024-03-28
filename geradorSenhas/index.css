@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: "lemon Milk",Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+@font-face {
+    font-family: "lemon Milk";
+    src: url(fonte/LEMONMILK-Regular.otf) format("opentype");
+}
+:root{
+    font-size: 62.5%;
+
+    --cor1:#5BD575;
+    --cor2:#65AA74;
+    --cor3:#42FF6B;
+    --cor4:#0c110d;
+}
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    font-size: 1.6rem;
+    background-color: #0c110d;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    align-items: center;
+    gap: 3rem;
+}
+#image{
+    background-image: url(imagens/passwordremove.png);
+
+    background-size: contain;
+    width: 100%;
+    height: 17rem;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+h1{
+    line-height: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--cor4);
+    font-style: italic;
+    
+}
+#generatorPassword{
+    background-image: linear-gradient(to bottom, var(--cor1),transparent );
+    border-radius: 1rem;
+    border: 1px solid white;
+    width: 80%;
+    height: 40rem;
+    padding: 1rem;
+}
+.containerDatesOfPassword{
+    height: 50%;
+    justify-content: space-evenly;
+}
+.colectElements{
+    height: fit-content;
+    display: flex;
+    flex-direction: row; 
+}
+i{
+    width: 2.5rem;
+    background-color: var(--cor4);
+    color: white;
+    border: 1px solid black;
+    border-right: none;
+  
+    
+}
+input{
+    width: calc(100% - 2.5rem);
+    height: 100%;
+    padding: .5rem;
+    outline: none;
+    border: .1rem solid black;
+    border-left: none;
+}
+input::placeholder{
+    font-size: 0.8rem;
+}
+#finallyPassword{
+    color: rgb(34, 34, 34);
+    text-align: center;
+    font-size: 1.4rem;
+    visibility: hidden;
+}
+.containerButtons{
+    height: fit-content;
+    gap: 2rem;
+    align-items: center;
+}
+button{
+    width: 15rem;
+    padding: .5rem;
+    background-color:#42ff6b81;
+    color: var(--cor4);
+    border: 1px solid var(--cor4);
+    border-radius: 1rem;
+    opacity: 80%;
+    transition-duration: .5s;
+}
+button:hover{
+    background-color: #42FF6B;
+    scale: 1.05;
+    border: .1remsolid white;
+}
